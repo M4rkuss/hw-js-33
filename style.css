@@ -1,0 +1,103 @@
+html, body, * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+video[poster] {
+    width: 100%;
+}
+
+.wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 100px;
+}
+
+.video-wrap {
+    position: relative;
+}
+
+.interface-line {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.interface-line img:hover, .interface-line button:hover, .interface-line input:hover, .interface-line progress:hover {
+    cursor: pointer;
+}
+
+.interface-line img {
+    width: 20px;
+    height: 20px;
+    transition: .4s ease;
+}
+
+.interface-line .interface-buttons img:hover {
+    transform: scale(1.1);
+}
+
+.interface-buttons {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.interface-buttons button {
+    outline: none;
+    border: none;
+    padding: 4px;
+    border-radius: 3px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    transition: .4s ease;
+}
+
+.interface-buttons button:hover {
+    background: rgba(255, 255, 255, 1);
+}
+
+.progress-bar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 50%;
+}
+
+.progress-bar progress {
+    width: 100%;
+}
+
+.progress-bar p {
+    margin-right: 10px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.volume-block {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.volume-block img {
+    position: relative;
+    left: -5px;
+}
+
+.volume-block input {
+    width: 80%;
+}

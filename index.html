@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HW JS 33 - Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="wrap">
+    <div class="video-wrap">
+        <video width="550" height="400" id="video-player"
+               poster="https://bigkyiv.com.ua/wp-content/uploads/2022/04/maxresdefault.jpg">
+            <source src="oi-u-luzi-mov.mp4" type="video/mp4">
+            <source src="oi-u-luzi-mov.ogv" type="video/ogv">
+        </video>
+        <div class="interface-line">
+            <div class="interface-buttons">
+                <img src="./icons/play-icon.png" alt="play" id="play">
+                <img src="./icons/pause-icon.png" alt="pause" id="pause">
+                <img src="./icons/stop-icon.png" id="stop">
+                <button id="speed-down">0.5x</button>
+                <button id="speed-norm">1x</button>
+                <button id="speed-up">2x</button>
+            </div>
+            <div class="progress-bar">
+                <p id="out">0</p>
+                <progress max="100" value="0" id="progress"></progress>
+            </div>
+            <div class="volume-block">
+                <img src="./icons/volume-icon.png" alt="Volume">
+                <input type="range" id="volume" min="0" max="100">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
